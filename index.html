@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f4e9">
+  <meta name="description" content="A bottle made for your every move. Explore the colorful Bottle collection.">
+  <title>Bottle — Made for your move</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+  <div class="loader" aria-label="Loading Bottle"><span class="loader-brand">Bottle<span>®</span></span><img
+      src="assets/bottle.png" alt="" class="loading-bottle">
+    <div class="loading-bottom"><span>GOOD THINGS TAKE A SIP.</span><span id="load-count">00</span></div>
+    <div class="loading-track"><i></i></div>
+  </div>
+  <header><a href="#home" class="logo" aria-label="Bottle home">Bottle<span>®</span></a>
+    <nav aria-label="Main navigation"><a href="#story">The bottle</a><a href="#collection">The colors</a><a
+        href="#about">Our story</a></nav><a class="small-button" href="#collection">Find your bottle <span>↗</span></a>
+  </header>
+  <main>
+    <section class="scroll-scene" id="home">
+      <div class="stage">
+        <div class="hero-copy">
+          <p class="eyebrow">A LITTLE EVERYDAY. A LOT OF POSSIBILITY.</p>
+          <h1>MADE FOR<br>YOUR <em>MOVE.</em></h1>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="moving-bottle"><img src="assets/bottle.png"
+            alt="Forest green Bottle thermos with a carry handle"><span class="bottle-shadow"></span></div>
+        <div class="story-copy" id="story">
+          <p class="eyebrow">MEET YOUR EVERYDAY PLUS ONE</p>
+          <h2>BUILT TO<br>MOVE WITH<br><em>YOU.</em></h2>
+          <p>From the first light to the last mile.<br>A little refreshment, wherever life takes you.</p><a
+            href="#collection" class="pill">Explore the collection <span>↗</span></a>
+        </div>
+        <div class="hero-bottom"><span>TAKE A SIP.<br>MAKE YOUR MOVE.</span><a href="#story" id="scroll-link">Scroll to
+            explore <span>↓</span></a><span>DESIGNED TO GO<br>WHEREVER YOU DO.</span></div>
+      </div>
+    </section>
+    <section class="collection" id="collection">
+      <p class="eyebrow reveal">ONE BOTTLE. EVERY VERSION OF YOU.</p>
+      <h2 class="reveal">BUILT FOR<br><em>EVERYWHERE.</em></h2>
+      <div class="products">
+        <button class="product reveal" data-color="orange" aria-label="Explore Sunset Orange">
+          <div class="product-image orange"><img src="assets/bottle.png" alt="Sunset orange bottle" loading="lazy">
+          </div>
+          <div class="product-label"><span><i style="--swatch:#db632e"></i>Sunset orange</span><span>↗</span></div>
+        </button>
+        <button class="product reveal" data-color="green" aria-label="Explore Field Green">
+          <div class="product-image green"><img src="assets/bottle.png" alt="Field green bottle" loading="lazy"></div>
+          <div class="product-label"><span><i style="--swatch:#539338"></i>Field green</span><span>↗</span></div>
+        </button>
+        <button class="product reveal" data-color="black" aria-label="Explore Midnight Black">
+          <div class="product-image black"><img src="assets/bottle.png" alt="Midnight black bottle" loading="lazy">
+          </div>
+          <div class="product-label"><span><i style="--swatch:#26382f"></i>Midnight black</span><span>↗</span></div>
+        </button>
+        <button class="product reveal" data-color="purple" aria-label="Explore Dusk Purple">
+          <div class="product-image purple"><img src="assets/bottle.png" alt="Dusk purple bottle" loading="lazy"></div>
+          <div class="product-label"><span><i style="--swatch:#706787"></i>Dusk purple</span><span>↗</span></div>
+        </button>
+      </div>
+      <p class="collection-note">Different shades. Same adventure. <span>Find the one that feels like you.</span></p>
+    </section>
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">LESS ORDINARY. MORE EVERYDAY.</p>
+        <h2>REFILL.<br>RETHINK.<br><em>REPEAT.</em></h2>
+      </div>
+      <div class="about-copy"><span class="asterisk">✳</span>
+        <p>Your desk. Your trail. Your next train.<br>We believe your everyday essentials should be ready for all of it.
+        </p>
+        <p>One familiar companion.<br>A thousand places to go.</p><a href="#collection" class="pill">Choose your color
+          <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="logo" href="#home">Bottle<span>®</span></a><span>MADE FOR YOUR MOVE.</span><button
+      id="replay">Replay the experience ↺</button><span>© <span id="year"></span> Bottle · Concept experience</span>
+  </footer>
+  <dialog id="product-dialog"><button class="close-dialog" aria-label="Close bottle details">×</button>
+    <div id="detail-image" class="detail-image green"><img src="assets/bottle.png" alt="Selected bottle"></div>
+    <div class="detail-copy">
+      <p class="eyebrow">YOUR EVERYDAY PLUS ONE</p>
+      <h2 id="color-name">Field green</h2>
+      <p>Good color. Great company.<br>Pick a shade for wherever you're headed.</p>
+      <div class="swatches" aria-label="Bottle color"><button data-color="orange" style="--swatch:#db632e"
+          aria-label="Sunset orange"></button><button data-color="green" style="--swatch:#539338"
+          aria-label="Field green"></button><button data-color="black" style="--swatch:#26382f"
+          aria-label="Midnight black"></button><button data-color="purple" style="--swatch:#706787"
+          aria-label="Dusk purple"></button></div>
+      <p class="concept-note">A design concept inspired by your reference.<br>This collection is a visual preview.</p>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+
+</html>
